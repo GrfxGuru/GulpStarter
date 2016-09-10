@@ -1,0 +1,6 @@
+{
+  "name": "GulpStarter",
+  "tagline": "My starting gulp tasks.",
+  "body": "I am slowly moving over to using [Gulp](http://gulpjs.com) for improving my Web and JavaScript workflows. This repository is my starting set of tasks that I expect to use over and over again. It also serves as a learning repository for me as I study Gulp. I am certain these tasks will expand and improve over time as I find more reasons to automate my process.\r\n\r\nFeel free to use or suggest improvements to these tasks in the spirit of sharing with others. You can also contact me via my web site, [https://peterwitham.com](https://peterwitham.com).\r\n\r\n###Current Gulp Tasks\r\n**less-to-css**\r\n\r\nCompiles Less files to CSS and runs autoprefixer.\r\n\r\n**watch-less**\r\n\r\nWatches for changes to Less files and runs less-to-css.\r\n\r\n**sass-to-css**\r\n\r\nCompiles Sass files to CSS and runs autoprefixer\r\n\r\n**watch-sass**\r\n\r\nWatches for changes to Sass files and runs sass-to-css.\r\n\r\n**clean-styles**\r\n\r\nRemoves CSS files from the dev_build and all sub-directories.\r\n\r\n**clean-dev**\r\n\r\nRemoves the dev_build directory.\r\n\r\n###Planned Gulp Tasks\r\n- CSS Minify\r\n- JavaScript Minify\r\n- JavaScript Linting\r\n- PHP Linting\r\n- PHP Minify",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
