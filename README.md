@@ -21,7 +21,7 @@ Watches for changes to Sass files and runs sass-to-css.
 
 **clean-styles**
 
-Removes CSS files from the dev_build and all sud-directories.
+Removes CSS files from the dev_build and all sub-directories.
 
 **clean-dev**
 
