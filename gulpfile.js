@@ -61,14 +61,13 @@ gulp.task("clean-dev", function (done) {
 });
 
 /**
- * Functions used in the script
+ * Functions used in scripts
  */
 
 /**
  * Logs whatever is sent as an argument
  * @param msg
  */
-
 function log (msg) {
     "use strict";
     if (typeof (msg) === "object") {
