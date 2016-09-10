@@ -1,0 +1,3 @@
+I am slowly moving over to using [Gulp](http://gulpjs.com) for improving my Web and JavaScript workflows. This repository is my starting set of tasks that I expect to use over and over again. It also serves as a learning repository for me as I study Gulp. I am certain these tasks will expand and improve over time as I find more reasons to automate my process.
+
+Feel free to use or suggest improvements to these tasks in the spirit of sharing with others.
