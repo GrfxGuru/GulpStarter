@@ -24,7 +24,10 @@ module.exports = function () {
         srcPHP: [
             "./src/**/*.php",
             "./*.php"
-        ]
+        ],
+        dist: 'dist',
+        distCSS: 'dist/**/*.css',
+        distJS: 'dist/**/*.js'
     };
     return config;
 };
