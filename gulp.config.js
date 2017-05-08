@@ -5,23 +5,23 @@ module.exports = function () {
         /**
          * All File Paths
          */
-        all_js: [
+        srcJS: [
             "./src/**/*.js",
             "./*.js"
         ],
-        all_less: [
+        srcLESS: [
             "./src/**/*.less",
             "./*.less"
         ],
-        all_sass: [
+        srcSASS: [
             "./src/**/*.sass",
             "./*.sass"
         ],
-        all_css: [
+        srcCSS: [
             "./src/**/*.css",
             "./*.css"
         ],
-        all_php: [
+        srcPHP: [
             "./src/**/*.php",
             "./*.php"
         ]

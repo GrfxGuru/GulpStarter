@@ -12,7 +12,7 @@ gulp.task("less-to-css", function () {
     "use strict";
     log("Compiling Less -> CSS");
     return gulp
-        .src(config.all_less)
+        .src(config.srcLESS)
         .pipe($.plumber())
         .pipe($.less())
         .pipe($.autoprefixer())
@@ -21,7 +21,7 @@ gulp.task("less-to-css", function () {
 
 gulp.task("watch-less", function () {
     "use strict";
-    gulp.watch([config.all_less], ["less_to_css"]);
+    gulp.watch([config.srcLESS], ["less_to_css"]);
 });
 
 /**
@@ -32,7 +32,7 @@ gulp.task("sass-to-css", function () {
     log("Compiling Sass -> CSS");
     return gulp
         .pipe($.plumber())
-        .src(config.all_sass)
+        .src(config.srcSASS)
         .pipe($.sass())
         .pipe($.autoprefixer())
         .pipe(gulp.dest(config.dev));
@@ -40,7 +40,7 @@ gulp.task("sass-to-css", function () {
 
 gulp.task("watch-sass", function () {
     "use strict";
-    gulp.watch([config.all_sass], ["sass_to_css"]);
+    gulp.watch([config.srcSASS], ["sass_to_css"]);
 });
 
 /**
