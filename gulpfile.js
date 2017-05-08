@@ -16,7 +16,7 @@ gulp.task("less-to-css", function () {
         .pipe($.plumber())
         .pipe($.less())
         .pipe($.autoprefixer())
-        .pipe(gulp.dest(config.dev));
+        .pipe(gulp.dest(config.distCSS));
 });
 
 gulp.task("watch-less", function () {
@@ -35,7 +35,7 @@ gulp.task("sass-to-css", function () {
         .src(config.srcSASS)
         .pipe($.sass())
         .pipe($.autoprefixer())
-        .pipe(gulp.dest(config.dev));
+        .pipe(gulp.dest(config.distCSS));
 });
 
 gulp.task("watch-sass", function () {
