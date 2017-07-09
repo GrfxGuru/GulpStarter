@@ -23,6 +23,10 @@ Watches for changes to Sass files and runs sass-to-css.
 
 Removes CSS files from the dev_build and all sub-directories.
 
+**imagemin**
+
+Minify JPG and PNG files.
+
 **clean-dev**
 
 Removes the dev_build directory.
