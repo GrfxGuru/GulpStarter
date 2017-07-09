@@ -25,9 +25,14 @@ module.exports = function () {
             "./src/**/*.php",
             "./*.php"
         ],
+        srcImages: [
+            "./src/**/*.png",
+            "./src/**/.jpg"
+        ],
         dist: 'dist',
         distCSS: 'dist/**/*.css',
-        distJS: 'dist/**/*.js'
+        distJS: 'dist/**/*.js',
+        distImages: 'dist/**/*.jpg'
     };
     return config;
 };

@@ -1,9 +1,14 @@
-var gulp    = require("gulp");
-var args    = require("yargs");
-var del     = require("del");
-var config  = require("./gulp.config")();
-var $       = require('gulp-load-plugins')({lazy: true});
-var inject  = require('gulp-inject');
+/*jshint esversion: 6 */
+/*jshint node: true  */
+/*jslint es6 */
+
+const gulp        = require("gulp");
+const args        = require("yargs");
+const del         = require("del");
+const config      = require("./gulp.config")();
+const $           = require('gulp-load-plugins')({lazy: true});
+const inject      = require('gulp-inject');
+const imagemin    = require('gulp-imagemin');
 
 /**
  * Less Files
@@ -50,7 +55,7 @@ gulp.task("watch-sass", function () {
 gulp.task("clean-styles", function (done) {
     "use strict";
     log("Cleaning out css files");
-    var files = config.dev + "/**/*.css";
+    const files = config.dev + "/**/*.css";
     clean(files);
 });
 
@@ -59,6 +64,18 @@ gulp.task("clean-dev", function (done) {
     log("Cleaning out dev_build");
     var files = config.dev;
     clean(files);
+});
+
+/**
+ * Image Manipulation
+ */
+
+gulp.task("imagemin", function() {
+    "use strict";
+    return gulp
+        .src(config.srcImages)
+        .pipe(imagemin())
+        .pipe(gulp.dest(config.distImages));
 });
 
 /**
@@ -72,7 +89,7 @@ gulp.task("clean-dev", function (done) {
 function log (msg) {
     "use strict";
     if (typeof (msg) === "object") {
-        for (var item in msg) {
+        for (const item in msg) {
             if (msg.hasOwnProperty(item)) {
                 $.util.log($.util.colors.blue(msg[item]));
             }
